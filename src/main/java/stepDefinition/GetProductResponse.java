@@ -1,10 +1,12 @@
 package stepDefinition;
 
+
 import org.junit.Assert;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import io.restassured.RestAssured;
+import io.restassured.http.ContentType;
 import io.restassured.http.Method;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
@@ -61,4 +63,16 @@ public class GetProductResponse {
 		Assert.assertEquals(statuscode /*actual value*/, 400 /*expected value*/);
 //	    throw new PendingException();
 	}
+	
+	@Then("^get Post response \\\"([^\\\"]*)\\\" and type \\\"([^\\\"]*)\\\"$")
+	public static void  Post(String Uri,String Json)
+	{
+		RequestSpecification requestspec=RestAssured.given().body(Json) ;
+		
+		requestspec.contentType(ContentType.JSON);
+		Response responjson=requestspec.post("http://restapi.demoqa.com/utilities/weather/city/Hyderabad");
+		System.out.println(responjson);
+	}
+	
+	
 }

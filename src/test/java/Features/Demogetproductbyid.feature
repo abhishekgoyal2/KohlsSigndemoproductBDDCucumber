@@ -6,4 +6,6 @@ Scenario: Validate Product API respone
 	Then Print the response Returned 
 	Then validate the respone code 
 	Then validate Status code for invalid state 
+	Then get Post response "<uri>" and type "<Json>" 
+	
 	

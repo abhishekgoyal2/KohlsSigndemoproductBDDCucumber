@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.746254">
-<testcase classname="Product demo app" name="Validate Product API respone" time="6.746254">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.877635">
+<testcase classname="Product demo app" name="Validate Product API respone" time="6.877635">
 <system-out><![CDATA[Given User hits the request with a given REST API end point.................passed
 Then Print the response Returned............................................passed
 Then validate the respone code..............................................passed
 Then validate Status code for invalid state.................................passed
+Then get Post response "<uri>" and type "<Json>"............................passed
 ]]></system-out>
 </testcase>
 </testsuite>
