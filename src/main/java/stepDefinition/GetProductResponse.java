@@ -56,8 +56,9 @@ public class GetProductResponse {
 		 
 		//print status code and validate the respone
 		int  statuscode = response.getStatusCode();
+		
 		System.out.println("Response Body is =>  " + statuscode);
-		Assert.assertEquals(statuscode /*actual value*/, 200 /*expected value*/);
+		Assert.assertEquals(statuscode /*actual value*/, 400 /*expected value*/);
 //	    throw new PendingException();
 	}
 }

@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 679414071,
+              "duration": 1024642985,
               "status": "passed"
             },
             "line": 5,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 3221255304,
+              "duration": 3510374896,
               "status": "passed"
             },
             "line": 6,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 981429702,
+              "duration": 1200174450,
               "status": "passed"
             },
             "line": 7,
@@ -48,9 +48,8 @@
           },
           {
             "result": {
-              "duration": 991231013,
-              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:555)\r\n\tat org.junit.Assert.assertEquals(Assert.java:542)\r\n\tat stepDefinition.GetProductResponse.validate_invalid_respone_code(GetProductResponse.java:60)\r\n\tat ✽.Then validate Status code for invalid state(src/test/java/Features/Demogetproductbyid.feature:8)\r\n",
-              "status": "failed"
+              "duration": 1011061402,
+              "status": "passed"
             },
             "line": 8,
             "name": "validate Status code for invalid state",
