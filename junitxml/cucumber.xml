@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="5.87333">
+<testcase classname="Product demo app" name="Validate Product API respone" time="5.87333">
+<failure message="java.lang.AssertionError: expected:&lt;400&gt; but was:&lt;200&gt;&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:88)&#13;&#10;&#9;at org.junit.Assert.failNotEquals(Assert.java:743)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:118)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:555)&#13;&#10;&#9;at org.junit.Assert.assertEquals(Assert.java:542)&#13;&#10;&#9;at stepDefinition.GetProductResponse.validate_invalid_respone_code(GetProductResponse.java:60)&#13;&#10;&#9;at ✽.Then validate Status code for invalid state(src/test/java/Features/Demogetproductbyid.feature:8)&#13;&#10;"><![CDATA[Given User hits the request with a given REST API end point.................passed
+Then Print the response Returned............................................passed
+Then validate the respone code..............................................passed
+Then validate Status code for invalid state.................................failed
+
+StackTrace:
+java.lang.AssertionError: expected:<400> but was:<200>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:743)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:555)
+	at org.junit.Assert.assertEquals(Assert.java:542)
+	at stepDefinition.GetProductResponse.validate_invalid_respone_code(GetProductResponse.java:60)
+	at ✽.Then validate Status code for invalid state(src/test/java/Features/Demogetproductbyid.feature:8)
+]]></failure>
+</testcase>
+</testsuite>

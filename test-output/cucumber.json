@@ -1,0 +1,71 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "Validate Product API respone",
+        "description": "",
+        "id": "product-demo-app;validate-product-api-respone",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 679414071,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User hits the request with a given REST API end point",
+            "match": {
+              "location": "GetProductResponse.Service_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3221255304,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Print the response Returned",
+            "match": {
+              "location": "GetProductResponse.User_get_the_ok_response()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 981429702,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate the respone code",
+            "match": {
+              "location": "GetProductResponse.validate_respone_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 991231013,
+              "error_message": "java.lang.AssertionError: expected:\u003c400\u003e but was:\u003c200\u003e\r\n\tat org.junit.Assert.fail(Assert.java:88)\r\n\tat org.junit.Assert.failNotEquals(Assert.java:743)\r\n\tat org.junit.Assert.assertEquals(Assert.java:118)\r\n\tat org.junit.Assert.assertEquals(Assert.java:555)\r\n\tat org.junit.Assert.assertEquals(Assert.java:542)\r\n\tat stepDefinition.GetProductResponse.validate_invalid_respone_code(GetProductResponse.java:60)\r\n\tat ✽.Then validate Status code for invalid state(src/test/java/Features/Demogetproductbyid.feature:8)\r\n",
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "validate Status code for invalid state",
+            "match": {
+              "location": "GetProductResponse.validate_invalid_respone_code()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Product demo app",
+    "description": "",
+    "id": "product-demo-app",
+    "keyword": "Feature",
+    "uri": "src/test/java/Features/Demogetproductbyid.feature"
+  }
+]
