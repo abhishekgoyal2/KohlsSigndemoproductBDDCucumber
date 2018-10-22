@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.877635">
-<testcase classname="Product demo app" name="Validate Product API respone" time="6.877635">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="24.273162">
+<testcase classname="Product demo app" name="Validate Product API respone" time="10.511029">
 <system-out><![CDATA[Given User hits the request with a given REST API end point.................passed
-Then Print the response Returned............................................passed
-Then validate the respone code..............................................passed
+Then Print the response Returned for "Hyderabad"............................passed
+Then validate the respone code "Hyderabad"..................................passed
 Then validate Status code for invalid state.................................passed
-Then get Post response "<uri>" and type "<Json>"............................passed
+Then get Post response "http://restapi.demoqa.com/utilities/weather/city/Hyderabad" and type "<Jsonbody>".passed
+]]></system-out>
+</testcase>
+<testcase classname="Product demo app" name="Validate Product API respone" time="7.873127">
+<system-out><![CDATA[Given User hits the request with a given REST API end point.................passed
+Then Print the response Returned for "Noida"................................passed
+Then validate the respone code "Noida"......................................passed
+Then validate Status code for invalid state.................................passed
+Then get Post response "http://restapi.demoqa.com/utilities/weather/city/Hyderabad" and type "<Jsonbody>".passed
+]]></system-out>
+</testcase>
+<testcase classname="Product demo app" name="Validate Product API respone" time="5.889006">
+<system-out><![CDATA[Given User hits the request with a given REST API end point.................passed
+Then Print the response Returned for "Delhi"................................passed
+Then validate the respone code "Delhi"......................................passed
+Then validate Status code for invalid state.................................passed
+Then get Post response "http://restapi.demoqa.com/utilities/weather/city/Hyderabad" and type "<Jsonbody>".passed
 ]]></system-out>
 </testcase>
 </testsuite>

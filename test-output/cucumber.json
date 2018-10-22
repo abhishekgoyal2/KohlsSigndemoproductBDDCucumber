@@ -3,16 +3,16 @@
     "line": 1,
     "elements": [
       {
-        "line": 3,
+        "line": 13,
         "name": "Validate Product API respone",
         "description": "",
-        "id": "product-demo-app;validate-product-api-respone",
+        "id": "product-demo-app;validate-product-api-respone;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 529083136,
+              "duration": 516886110,
               "status": "passed"
             },
             "line": 5,
@@ -24,31 +24,49 @@
           },
           {
             "result": {
-              "duration": 2787243571,
+              "duration": 4113773644,
               "status": "passed"
             },
             "line": 6,
-            "name": "Print the response Returned",
+            "name": "Print the response Returned for \"Hyderabad\"",
             "match": {
-              "location": "GetProductResponse.User_get_the_ok_response()"
+              "arguments": [
+                {
+                  "val": "Hyderabad",
+                  "offset": 33
+                }
+              ],
+              "location": "GetProductResponse.User_get_the_ok_response(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1088436038,
+              "duration": 1895736793,
               "status": "passed"
             },
             "line": 7,
-            "name": "validate the respone code",
+            "name": "validate the respone code \"Hyderabad\"",
             "match": {
-              "location": "GetProductResponse.validate_respone_code()"
+              "arguments": [
+                {
+                  "val": "Hyderabad",
+                  "offset": 27
+                }
+              ],
+              "location": "GetProductResponse.validate_respone_code(String)"
             },
+            "matchedColumns": [
+              0
+            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1232287514,
+              "duration": 2001036184,
               "status": "passed"
             },
             "line": 8,
@@ -60,24 +78,229 @@
           },
           {
             "result": {
-              "duration": 1240584608,
+              "duration": 1983596534,
               "status": "passed"
             },
             "line": 9,
-            "name": "get Post response \"\u003curi\u003e\" and type \"\u003cJson\u003e\"",
+            "name": "get Post response \"http://restapi.demoqa.com/utilities/weather/city/Hyderabad\" and type \"\u003cJsonbody\u003e\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\u003curi\u003e",
+                  "val": "http://restapi.demoqa.com/utilities/weather/city/Hyderabad",
                   "offset": 19
                 },
                 {
-                  "val": "\u003cJson\u003e",
-                  "offset": 36
+                  "val": "\u003cJsonbody\u003e",
+                  "offset": 89
                 }
               ],
               "location": "GetProductResponse.Post(String,String)"
             },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Validate Product API respone",
+        "description": "",
+        "id": "product-demo-app;validate-product-api-respone;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36892,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User hits the request with a given REST API end point",
+            "match": {
+              "location": "GetProductResponse.Service_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2009538988,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Print the response Returned for \"Noida\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Noida",
+                  "offset": 33
+                }
+              ],
+              "location": "GetProductResponse.User_get_the_ok_response(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1862737059,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate the respone code \"Noida\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Noida",
+                  "offset": 27
+                }
+              ],
+              "location": "GetProductResponse.validate_respone_code(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2973727443,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate Status code for invalid state",
+            "match": {
+              "location": "GetProductResponse.validate_invalid_respone_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1027086747,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "get Post response \"http://restapi.demoqa.com/utilities/weather/city/Hyderabad\" and type \"\u003cJsonbody\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://restapi.demoqa.com/utilities/weather/city/Hyderabad",
+                  "offset": 19
+                },
+                {
+                  "val": "\u003cJsonbody\u003e",
+                  "offset": 89
+                }
+              ],
+              "location": "GetProductResponse.Post(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 15,
+        "name": "Validate Product API respone",
+        "description": "",
+        "id": "product-demo-app;validate-product-api-respone;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 36251,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User hits the request with a given REST API end point",
+            "match": {
+              "location": "GetProductResponse.Service_is_running()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1110141546,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Print the response Returned for \"Delhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi",
+                  "offset": 33
+                }
+              ],
+              "location": "GetProductResponse.User_get_the_ok_response(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1954568304,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "validate the respone code \"Delhi\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi",
+                  "offset": 27
+                }
+              ],
+              "location": "GetProductResponse.validate_respone_code(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1801848257,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "validate Status code for invalid state",
+            "match": {
+              "location": "GetProductResponse.validate_invalid_respone_code()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1022412051,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "get Post response \"http://restapi.demoqa.com/utilities/weather/city/Hyderabad\" and type \"\u003cJsonbody\u003e\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://restapi.demoqa.com/utilities/weather/city/Hyderabad",
+                  "offset": 19
+                },
+                {
+                  "val": "\u003cJsonbody\u003e",
+                  "offset": 89
+                }
+              ],
+              "location": "GetProductResponse.Post(String,String)"
+            },
+            "matchedColumns": [
+              1
+            ],
             "keyword": "Then "
           }
         ]

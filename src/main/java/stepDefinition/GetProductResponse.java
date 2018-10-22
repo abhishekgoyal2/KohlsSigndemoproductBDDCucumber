@@ -23,11 +23,11 @@ public class GetProductResponse {
 //	    throw new PendingException();
 	}
 
-	@Then("^Print the response Returned$")
-	public void User_get_the_ok_response() throws Throwable {
+	@Then("^Print the response Returned for \\\"([^\\\"]*)\\\"$$")
+	public void User_get_the_ok_response(String city) throws Throwable {
 	    // Express the Regexp above with the code you wish you had
 		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.request(Method.GET, "/Hyderabad");
+		Response response = httpRequest.request(Method.GET, city);
 		 
 		//print response body
 		String responseBody = response.getBody().asString();
@@ -36,16 +36,17 @@ public class GetProductResponse {
 	}
 
 	
-	@Then("^validate the respone code$")
-	public void validate_respone_code() throws Throwable {
+	@Then("^validate the respone code \"([^\"]*)\"$")
+	public void validate_respone_code(String city) throws Throwable {
 	    // Express the Regexp above with the code you wish you had
 		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.request(Method.GET, "/Hyderabad");
+		Response response = httpRequest.request(Method.GET, city);
 		 
 		//print status code and validate the respone
 		int  statuscode = response.getStatusCode();
-		System.out.println("Response Body is =>  " + statuscode);
 		Assert.assertEquals(statuscode /*actual value*/, 200 /*expected value*/);
+		System.out.println("status code is =>  " + statuscode);
+		
 //	    throw new PendingException();
 	}
 	
@@ -54,7 +55,7 @@ public class GetProductResponse {
 	public void validate_invalid_respone_code() throws Throwable {
 	    // Express the Regexp above with the code you wish you had
 		RequestSpecification httpRequest = RestAssured.given();
-		Response response = httpRequest.request(Method.GET, "/erer");
+		Response response = httpRequest.request(Method.GET,"err0");
 		 
 		//print status code and validate the respone
 		int  statuscode = response.getStatusCode();
@@ -70,7 +71,7 @@ public class GetProductResponse {
 		RequestSpecification requestspec=RestAssured.given().body(Json) ;
 		
 		requestspec.contentType(ContentType.JSON);
-		Response responjson=requestspec.post("http://restapi.demoqa.com/utilities/weather/city/Hyderabad");
+		Response responjson=requestspec.post(Uri);
 		System.out.println(responjson);
 	}
 	
